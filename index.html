@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nonso Nwabuokei || @nnwabuokei</title>
+
+  <!-- --------------Stylesheet----------------- -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- --------------Favicon----------------- -->
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+     <!--=============== BOXICONS ===============-->
+     <link
+     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+     rel="stylesheet"
+   />
+  <!-- --------------Font Awesome Link----------------- -->
+  <script src="https://kit.fontawesome.com/b81f699467.js" crossorigin="anonymous"></script>
+  <!-- --------------Google Fonts----------------- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+</head>
+<title>Home</title>
+
+<body class="cursor-effect personal-page">
+
+  <div>
+
+      <!-- --------------Preloader----------------- -->
+
+      <div class="preloader">
+        <img src="/images/favicon.png" alt="">
+      </div>
+
+
+      <!-- Particles-js Start -->
+      <section id="particles-js"></section>
+      <!-- Particles-js End -->
+
+
+
+      <!-- --------------Home Section----------------- -->
+
+      <section id="home" class="animatePageIn">
+
+        <!-- --------------Navbar----------------- -->
+
+        <nav  id="navbar">
+          <div class="logo">
+            <h1><span class="logo-name">C</span>N</h1>
+          </div>
+          <div class="overlay"></div>
+          <div class="nav-items" data-animation="to-bottom">
+            <div class="menu-bg-title">Menu</div>
+            <ul class="nav-link" class="noselect">
+              <li>
+                <a href="/index.html"><span class="menu-title">Home</span>
+                  <span class="menu-number">01</span></a>
+              </li>
+              <li>
+                <a href="/about.html"><span class="menu-title">About</span>
+                  <span class="menu-number">02</span></a>
+              </li>
+              <li>
+                <a href="/experience.html"><span class="menu-title">Experience</span>
+                  <span class="menu-number">04</span></a>
+              </li>
+              <li>
+                <a href="/contact.html"><span class="menu-title">Contact</span>
+                  <span class="menu-number">05</span></a>
+              </li>
+              <li>
+                <a href="/Chukwunonso_Nwabuokei_-_Software_Engineer.pdf"><span class="menu-title">Resume</span>
+                  <span class="menu-number">06</span></a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Hamburger -->
+          <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <!-- <div class="line line-2"></div> -->
+            <div class="line line-3"></div>
+          </div>
+        </nav>
+
+
+        <div class="text-holder">
+          <h1>Chukwunonso Nwabuokei</h1>
+          <h3>Hi, I'm a <span class="auto-input"></span></h3>
+        </div>
+
+        <!-- Social Icons -->
+
+        <div class="social-icons">
+          <a href=""><i class="fa fa-github"></i></a>
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <a href="mailto:nnwabuokei@gmail.com"> <img class="send" src="/images/image.svg" alt=""> </a>
+      </section>
+  </div>
+
+
+
+
+
+  <!-- --------------Jquery Scripts----------------- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+  <!-- Particles-js Script -->
+  <script src="/Script/particles.min.js"></script>
+  <script src="/Script/particles-js-config.js"></script>
+
+
+  <!-- Preloader -->
+  <script src="/Script/preloader.js"></script>
+
+
+<!--=============== SCROLLREVEAL ===============-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- --------------Script----------------- -->
+  <script src="/Script/main.js"></script>
+
+  <script>
+    $(function () {
+  
+      "use strict";
+  
+      // ========================================================================= //
+      //  Preloader
+      // ========================================================================= //
+  
+      function HideLoad() {
+        $('.preloader').fadeOut(700, function () {
+          $(this).remove();
+        });
+        $("body").css({
+          overflow: "auto",
+          "overflow-x": "hidden"
+        });
+      }
+  
+      $(window).on("load", function () {
+        setTimeout(function () {
+          HideLoad(); // call out animations.
+        }, 800, 'ease-in');
+      });
+  
+      const typed = new Typed(".auto-input", {
+        strings: ["Full Stack Developer", "Frontend Developer", "Software Engineer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+      }); 
+    });
+  
+  
+  
+  </script>
+</body>
+</html>

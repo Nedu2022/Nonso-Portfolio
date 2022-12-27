@@ -287,15 +287,15 @@ body.cursor-effect #cursor {
   display: flex;
   align-items: center;
   justify-content: left;
-  font-size: 62px;
+  font-size: 40px;
   /* padding: 26px 10px 50px; */
   font-family: "Nunito", sans-serif;
   font-weight: 500;
 }
 
-.color {
+.me {
   color: var(--first-color);
-  padding-left: 19px;
+  padding: 8px;
 }
 
 .header-caption {
